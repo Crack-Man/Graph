@@ -1,6 +1,8 @@
 package GraphRedactor.Main;
 
 
+import GraphRedactor.Observer.Observer;
+
 import javax.swing.*;
 import java.awt.*;
 
@@ -12,6 +14,7 @@ class Main {
         EventQueue.invokeLater(() -> {
                 JFrame frame = new ShapeFrame(sp, par);
                 frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+                Shape.get().addObserver((Observer) frame);
                 frame.setVisible(true);
         });
     }

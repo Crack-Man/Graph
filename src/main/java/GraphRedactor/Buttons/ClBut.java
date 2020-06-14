@@ -16,6 +16,9 @@ public class ClBut extends JButton {
         this.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
+                if (Shape.get().getLast() != null) {
+                    Shape.get().getLast().setColor(color);
+                }
                 Shape.get().setColor(color);
             }
         });

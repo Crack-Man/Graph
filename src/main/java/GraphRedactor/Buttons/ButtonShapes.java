@@ -16,5 +16,7 @@ public class ButtonShapes extends JPanel {
         this.add(new ButtonLine(sp));
         this.add(new ButtonPolygon(sp));
         this.add(new SavePNG(sp));
+        this.add(new Save(sp));
+        this.add(new Load(sp));
     }
 }

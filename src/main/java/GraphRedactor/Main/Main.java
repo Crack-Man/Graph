@@ -9,7 +9,7 @@ import java.awt.*;
 class Main {
     public static void main(String args[]) {
         Parameters par = Parameters.get();
-        par.setParameters(600, 600, 40);
+        par.setParameters(800, 800, 40);
         Shape sp = Shape.get();
         EventQueue.invokeLater(() -> {
                 JFrame frame = new ShapeFrame(sp, par);

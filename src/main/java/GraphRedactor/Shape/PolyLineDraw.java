@@ -1,9 +1,12 @@
 package GraphRedactor.Shape;
 
+import GraphRedactor.save.BaseShape;
+
 import java.awt.*;
 import java.awt.geom.Point2D;
+import java.util.List;
 
-public class PolyLineDraw extends MainShape{
+public class PolyLineDraw extends BaseShape {
     private Color color;
     private PolyLine shape;
 
@@ -19,12 +22,34 @@ public class PolyLineDraw extends MainShape{
 
     @Override
     public Color getColor() {
-        return null;
+        return this.color;
+    }
+
+    @Override
+    public String getType() {
+        return "Polyline";
+    }
+
+    @Override
+    public List<Point2D> getPoints() {
+        return shape.getPoints();
+    }
+
+    @Override
+    public void set(Shape shape) {
+        this.shape = (PolyLine) shape;
     }
 
     @Override
     public void setColor(Color color) {
         this.color = color;
+    }
+
+    @Override
+    public void setCoordinates(List<Point2D> point) {
+        for(int i = 0; i < point.size() - 1; i++) {
+            addCoordinates(point.get(i));
+        }
     }
 
     @Override

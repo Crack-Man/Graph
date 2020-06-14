@@ -11,8 +11,10 @@ import java.util.List;
 
 public class Polygon implements Shape, Serializable {
     private List<Integer> x, y;
+    private List<Point2D> coordinates;
 
     public Polygon() {
+        coordinates = new ArrayList<Point2D>();
         this.x = new ArrayList<Integer>();
         this.y = new ArrayList<Integer>();
     }
@@ -34,6 +36,7 @@ public class Polygon implements Shape, Serializable {
     }
 
     public void addCoordinate(Point2D point) {
+        this.coordinates.add(point);
         this.x.add((int) point.getX());
         this.y.add((int) point.getY());
     }
@@ -47,7 +50,9 @@ public class Polygon implements Shape, Serializable {
         return this.x.size();
     }
 
-
+    public List<Point2D> getPoints() {
+        return this.coordinates;
+    }
 
 
     @Override

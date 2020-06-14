@@ -1,9 +1,13 @@
 package GraphRedactor.Shape;
 
-import java.awt.*;
-import java.awt.geom.Point2D;
+import GraphRedactor.save.BaseShape;
 
-public class RectDraw extends MainShape {
+import java.awt.*;
+import java.awt.geom.Rectangle2D;
+import java.awt.geom.Point2D;
+import java.util.List;
+
+public class RectDraw extends BaseShape {
     private Color color;
     private Rect shape;
 
@@ -14,17 +18,40 @@ public class RectDraw extends MainShape {
     @Override
     public void draw(Graphics g) {
         g.setColor(color);
-        g.drawRect(shape.getX0(), shape.getY0(), shape.getX1() - shape.getX0(), shape.getY1() - shape.getY0());
+        Rectangle2D rectangle = new Rectangle2D.Double();
+        rectangle.setFrameFromDiagonal(shape.getX0(), shape.getY0(), shape.getX1(), shape.getY1());
+        g.drawRect((int) rectangle.getX(), (int) rectangle.getY(), (int) rectangle.getWidth(), (int) rectangle.getHeight());
     }
 
     @Override
     public Color getColor() {
-        return null;
+        return this.color;
+    }
+
+    @Override
+    public String getType() {
+        return "Rectangle";
+    }
+
+    @Override
+    public List<Point2D> getPoints() {
+        return shape.getPoints();
+    }
+
+    @Override
+    public void set(Shape shape) {
+        this.shape = (Rect) shape;
     }
 
     @Override
     public void setColor(Color color) {
         this.color = color;
+    }
+
+    @Override
+    public void setCoordinates(List<Point2D> point) {
+        addCoordinates(point.get(0));
+        addSecCoordinates(point.get(1));
     }
 
     @Override

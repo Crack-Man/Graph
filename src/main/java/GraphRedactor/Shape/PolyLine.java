@@ -11,8 +11,11 @@ import java.util.List;
 
 public class PolyLine implements Shape, Serializable {
     private List<Integer> x, y;
+    private List<Point2D> coordinates;
+
 
     public PolyLine() {
+        coordinates = new ArrayList<Point2D>();
         this.x = new ArrayList<Integer>();
         this.y = new ArrayList<Integer>();
     }
@@ -34,6 +37,7 @@ public class PolyLine implements Shape, Serializable {
     }
 
     public void addCoordinate(Point2D point) {
+        this.coordinates.add(point);
         this.x.add((int) point.getX());
         this.y.add((int) point.getY());
     }
@@ -45,6 +49,10 @@ public class PolyLine implements Shape, Serializable {
 
     public int size() {
         return this.x.size();
+    }
+
+    public List<Point2D> getPoints() {
+        return this.coordinates;
     }
 
 

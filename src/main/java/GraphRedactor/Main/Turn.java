@@ -4,24 +4,24 @@ import java.awt.*;
 import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
-import GraphRedactor.Shape.MainShape;
+import GraphRedactor.save.BaseShape;
 
 public class Turn implements Serializable {
-    private List<MainShape> list;
+    private List<BaseShape> list;
     private Color color;
 
     public Turn() {
-        list = new ArrayList<MainShape>();
+        list = new ArrayList<BaseShape>();
         color = Color.black;
     }
 
-    public void add(MainShape shape) {
+    public void add(BaseShape shape) {
         shape.setColor(this.color);
         list.add(shape);
     }
 
     public void printTo(Graphics buffer) {
-        for (MainShape shape: list) {
+        for (BaseShape shape: list) {
             if(shape.get() != null) {
                 shape.draw(buffer);
             }
@@ -30,20 +30,25 @@ public class Turn implements Serializable {
 
     public void setColor(Color color) {
         this.color = color;
-        if(this.getLast() != null) {
-            this.getLast().setColor(color);
-        }
     }
 
     public Color getColor() {
         return this.color;
     }
 
-    public MainShape getLast() {
+    public BaseShape getLast() {
         if(list.size() == 0) {
             return null;
         } else {
             return list.get(list.size() - 1);
         }
+    }
+
+    public void refresh() {
+        this.list.clear();
+    }
+
+    public List<BaseShape> getTurn() {
+        return this.list;
     }
 }

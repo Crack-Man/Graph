@@ -2,14 +2,14 @@ package GraphRedactor.Main;
 
 
 import GraphRedactor.Observer.*;
-import GraphRedactor.Shape.MainShape;
+import GraphRedactor.save.*;
+import GraphRedactor.Shape.*;
 
 import javax.imageio.ImageIO;
 import java.awt.*;
 import java.awt.geom.Point2D;
 import java.awt.image.BufferedImage;
-import java.io.File;
-import java.io.IOException;
+import java.io.*;
 import java.util.ArrayList;
 
 public class Shape implements Observed {
@@ -40,7 +40,7 @@ public class Shape implements Observed {
         return me;
     }
 
-    public MainShape getLast() {
+    public BaseShape getLast() {
         return turn.getLast();
     }
 
@@ -48,8 +48,13 @@ public class Shape implements Observed {
         turn.setColor(color);
     }
 
-    public void add(MainShape shape) {
+    public void add(BaseShape shape) {
         turn.add(shape);
+    }
+
+    public void refresh() {
+        this.turn.refresh();
+        notifyObservers();
     }
 
     public void addCoordinates(Point2D point) {
@@ -82,6 +87,44 @@ public class Shape implements Observed {
 
     public void savePNG() throws IOException {
         ImageIO.write(buf, "png", new File("image.png"));
+    }
+
+    public void save() throws IOException {
+        SaveShapeQueue turnShape = new SaveShapeQueue();
+        for(BaseShape shape: turn.getTurn()) {
+            turnShape.addShape(new SaveShape(shape));
+        }
+        FileOutputStream outputStream = new FileOutputStream("save.ser");
+        ObjectOutputStream objectOutputStream = new ObjectOutputStream(outputStream);
+        objectOutputStream.writeObject(turnShape);
+        objectOutputStream.close();
+    }
+
+    public void load() throws IOException, ClassNotFoundException {
+        SaveShapeQueue shapes = new SaveShapeQueue();
+        FileInputStream fileInputStream = new FileInputStream("save.ser");
+        try (ObjectInputStream objectInputStream = new ObjectInputStream(fileInputStream)) {
+            shapes = (SaveShapeQueue) objectInputStream.readObject();
+            refresh();
+            for (SaveShape saveShape: shapes.getShapes()) {
+                System.out.println(saveShape.getColor());
+                setColor(saveShape.getColor());
+                if(saveShape.getType().equals("Ellipse")) {
+                    add(new EllipseDraw());
+                } else if (saveShape.getType().equals("Rectangle")) {
+                    add(new RectDraw());
+                } else if (saveShape.getType().equals("Polygon")) {
+                    add(new PolygonDraw());
+                } else if (saveShape.getType().equals("Polyline")) {
+                    add(new PolyLineDraw());
+                } else throw new RuntimeException("problem");
+                if(saveShape.getPoints().size() != 0) {
+                    getLast().setCoordinates(saveShape.getPoints());
+                }
+            }
+            notifyObservers();
+        }
+
     }
 
     @Override

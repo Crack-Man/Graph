@@ -6,11 +6,15 @@ import java.awt.geom.PathIterator;
 import java.awt.geom.Point2D;
 import java.awt.geom.Rectangle2D;
 import java.io.Serializable;
+import java.util.ArrayList;
+import java.util.List;
 
 public class Ellipse implements Shape, Serializable {
     private int x0, y0, x1, y1;
+    private List<Point2D> coordinates;
 
     public Ellipse() {
+        coordinates = new ArrayList<Point2D>();
     }
 
     public int getX0() {
@@ -29,12 +33,14 @@ public class Ellipse implements Shape, Serializable {
         return this.y1;
     }
 
-    public void addCoordinate(Point2D point) {
+    public void addCoordinates(Point2D point) {
+        coordinates.add(point);
         this.x0 = (int) point.getX();
         this.y0 = (int) point.getY();
     }
 
-    public void addSecCoordinate(Point2D point) {
+    public void addSecCoordinates(Point2D point) {
+        coordinates.add(point);
         this.x1 = (int) point.getX();
         this.y1 = (int) point.getY();
     }
@@ -48,6 +54,9 @@ public class Ellipse implements Shape, Serializable {
         return 0;
     }
 
+    public List<Point2D> getPoints() {
+        return this.coordinates;
+    }
 
 
 

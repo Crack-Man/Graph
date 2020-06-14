@@ -1,10 +1,13 @@
 package GraphRedactor.Shape;
 
+import GraphRedactor.save.BaseShape;
+
 import java.awt.*;
 import java.awt.geom.Ellipse2D;
 import java.awt.geom.Point2D;
+import java.util.List;
 
-public class EllipseDraw extends MainShape {
+public class EllipseDraw extends BaseShape {
     private Color color;
     private Ellipse shape;
 
@@ -22,12 +25,33 @@ public class EllipseDraw extends MainShape {
 
     @Override
     public Color getColor() {
-        return null;
+        return this.color;
+    }
+
+    @Override
+    public String getType() {
+        return "Ellipse";
+    }
+
+    @Override
+    public List<Point2D> getPoints() {
+        return shape.getPoints();
+    }
+
+    @Override
+    public void set(Shape shape) {
+        this.shape = (Ellipse) shape;
     }
 
     @Override
     public void setColor(Color color) {
         this.color = color;
+    }
+
+    @Override
+    public void setCoordinates(List<Point2D> point) {
+        addCoordinates(point.get(0));
+        addSecCoordinates(point.get(1));
     }
 
     @Override
@@ -37,12 +61,12 @@ public class EllipseDraw extends MainShape {
 
     @Override
     public void addCoordinates(Point2D point) {
-        this.shape.addCoordinate(point);
+        this.shape.addCoordinates(point);
     }
 
     @Override
     public void addSecCoordinates(Point2D point) {
-        this.shape.addSecCoordinate(point);
+        this.shape.addSecCoordinates(point);
     }
 
     @Override

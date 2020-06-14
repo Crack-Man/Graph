@@ -8,14 +8,16 @@ import GraphRedactor.Shape.MainShape;
 
 public class Turn implements Serializable {
     private List<MainShape> list;
+    private Color color;
 
     public Turn() {
         list = new ArrayList<MainShape>();
+        color = Color.black;
     }
 
     public void add(MainShape shape) {
+        shape.setColor(this.color);
         list.add(shape);
-        this.getLast().setColor(Color.black);
     }
 
     public void printTo(Graphics buffer) {
@@ -24,6 +26,17 @@ public class Turn implements Serializable {
                 shape.draw(buffer);
             }
         }
+    }
+
+    public void setColor(Color color) {
+        this.color = color;
+        if(this.getLast() != null) {
+            this.getLast().setColor(color);
+        }
+    }
+
+    public Color getColor() {
+        return this.color;
     }
 
     public MainShape getLast() {

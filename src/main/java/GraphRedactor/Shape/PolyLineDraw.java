@@ -38,6 +38,11 @@ public class PolyLineDraw extends MainShape{
     }
 
     @Override
+    public void addSecCoordinates(Point2D point) {
+        this.shape.addCoordinate(point);
+    }
+
+    @Override
     public void addMotionCoordinates(Point2D point) {
         this.shape.addMotionCoordinates(point);
     }

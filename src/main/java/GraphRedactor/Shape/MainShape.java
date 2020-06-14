@@ -10,5 +10,6 @@ public abstract class MainShape implements Serializable {
     abstract public void setColor(Color color);
     abstract public Shape get();
     abstract public void addCoordinates(Point2D point);
+    abstract public void addSecCoordinates(Point2D point);
     abstract public void addMotionCoordinates(Point2D point);
 }

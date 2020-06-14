@@ -15,7 +15,7 @@ public class Canvas extends JPanel {
         me = this;
         this.shape = shape;
         this.par = par;
-        this.setBounds(0, 0, par.getWidth(), par.getHeight());
+        this.setBounds(0, 2 * par.getButHeight(), par.getWidth(), par.getHeight());
         this.addMouseListener(new MouseListener() {
                 //MouseListener
                 @Override
@@ -38,7 +38,7 @@ public class Canvas extends JPanel {
                 @Override
                 public void mouseReleased(MouseEvent event) {
                     if(shape.getLast() != null) {
-                        shape.addMotionCoordinates(event.getPoint());
+                        shape.addSecCoordinates(event.getPoint());
                         repaint();
                     }
                 }

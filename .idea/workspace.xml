@@ -1,7 +1,75 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="357f075a-9ec8-44cb-86f5-6daea07157ab" name="Default Changelist" comment="" />
+    <list default="true" id="357f075a-9ec8-44cb-86f5-6daea07157ab" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/5.2.1/fileChanges/last-build.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/5.2.1/fileContent/fileContent.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/5.2.1/gc.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/classAnalysis.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/javaCompile.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/taskHistory.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/cache.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/vcs-1/gc.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/GraphRedactor/Buttons/ButtonLine$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/GraphRedactor/Buttons/ButtonLine.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/GraphRedactor/Buttons/ButtonPolygon$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/GraphRedactor/Buttons/ButtonPolygon.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/GraphRedactor/Buttons/ButtonRect$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/GraphRedactor/Buttons/ButtonRect.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/GraphRedactor/Buttons/MainButton.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/GraphRedactor/Main/ButtonShapes.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/GraphRedactor/Main/Canvas$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/GraphRedactor/Main/Canvas$2.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/GraphRedactor/Main/Canvas.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/GraphRedactor/Main/Main.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/GraphRedactor/Main/Parameters.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/GraphRedactor/Main/Shape.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/GraphRedactor/Main/ShapeFrame.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/GraphRedactor/Main/Turn.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/GraphRedactor/Shape/MainShape.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/GraphRedactor/Shape/PolyLine.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/GraphRedactor/Shape/PolyLineDraw.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/GraphRedactor/Shape/Polygon.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/GraphRedactor/Shape/PolygonDraw.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/GraphRedactor/Shape/Rect.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/GraphRedactor/Shape/RectDraw.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gradlew" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gradlew.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/settings.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/GraphRedactor/Buttons/ButtonLine.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/GraphRedactor/Buttons/ButtonPolygon.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/GraphRedactor/Buttons/ButtonRect.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/GraphRedactor/Buttons/MainButton.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/GraphRedactor/Main/ButtonShapes.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/GraphRedactor/Main/Canvas.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/GraphRedactor/Main/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/GraphRedactor/Main/Parameters.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/GraphRedactor/Main/Shape.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/GraphRedactor/Main/ShapeFrame.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/GraphRedactor/Main/Turn.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/GraphRedactor/Shape/Ellipse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/GraphRedactor/Shape/MainShape.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/GraphRedactor/Shape/PolyLine.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/GraphRedactor/Shape/PolyLineDraw.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/GraphRedactor/Shape/Polygon.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/GraphRedactor/Shape/PolygonDraw.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/GraphRedactor/Shape/Rect.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/GraphRedactor/Shape/RectDraw.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -19,7 +87,13 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="1dCLrYlNGTYOwuWePmN96RKd8wg" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -27,6 +101,10 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="project.structure.last.edited" value="Problems" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.2" />
   </component>
   <component name="RecentsManager">
     <key name="ExtractSuperBase.RECENT_KEYS">
@@ -39,7 +117,7 @@
       <module name="Graph.main" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="GraphRedactor.Main.*" />
+          <option name="PATTERN" value="GraphRedactor.Shape.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -71,37 +149,70 @@
       <screen x="0" y="0" width="1280" height="984" />
     </state>
     <state x="445" y="201" key="#com.intellij.ide.util.MemberChooser/0.0.1280.984@0.0.1280.984" timestamp="1591937349968" />
-    <state width="1237" height="263" key="GridCell.Tab.0.bottom" timestamp="1591944996514">
+    <state x="294" y="86" key="CommitChangelistDialog2" timestamp="1591948132393">
       <screen x="0" y="0" width="1280" height="984" />
     </state>
-    <state width="1237" height="263" key="GridCell.Tab.0.bottom/0.0.1280.984@0.0.1280.984" timestamp="1591944996514" />
-    <state width="1237" height="263" key="GridCell.Tab.0.center" timestamp="1591944996514">
+    <state x="294" y="86" key="CommitChangelistDialog2/0.0.1280.984@0.0.1280.984" timestamp="1591948132393" />
+    <state width="1237" height="263" key="GridCell.Tab.0.bottom" timestamp="1592106778789">
       <screen x="0" y="0" width="1280" height="984" />
     </state>
-    <state width="1237" height="263" key="GridCell.Tab.0.center/0.0.1280.984@0.0.1280.984" timestamp="1591944996514" />
-    <state width="1237" height="263" key="GridCell.Tab.0.left" timestamp="1591944996514">
+    <state width="1237" height="263" key="GridCell.Tab.0.bottom/0.0.1280.984@0.0.1280.984" timestamp="1592106778789" />
+    <state width="1237" height="263" key="GridCell.Tab.0.center" timestamp="1592106778789">
       <screen x="0" y="0" width="1280" height="984" />
     </state>
-    <state width="1237" height="263" key="GridCell.Tab.0.left/0.0.1280.984@0.0.1280.984" timestamp="1591944996514" />
-    <state width="1237" height="263" key="GridCell.Tab.0.right" timestamp="1591944996514">
+    <state width="1237" height="263" key="GridCell.Tab.0.center/0.0.1280.984@0.0.1280.984" timestamp="1592106778789" />
+    <state width="1237" height="263" key="GridCell.Tab.0.left" timestamp="1592106778789">
       <screen x="0" y="0" width="1280" height="984" />
     </state>
-    <state width="1237" height="263" key="GridCell.Tab.0.right/0.0.1280.984@0.0.1280.984" timestamp="1591944996514" />
-    <state width="1237" height="325" key="GridCell.Tab.1.bottom" timestamp="1591944996509">
+    <state width="1237" height="263" key="GridCell.Tab.0.left/0.0.1280.984@0.0.1280.984" timestamp="1592106778789" />
+    <state width="1237" height="263" key="GridCell.Tab.0.right" timestamp="1592106778789">
       <screen x="0" y="0" width="1280" height="984" />
     </state>
-    <state width="1237" height="325" key="GridCell.Tab.1.bottom/0.0.1280.984@0.0.1280.984" timestamp="1591944996509" />
-    <state width="1237" height="325" key="GridCell.Tab.1.center" timestamp="1591944996508">
+    <state width="1237" height="263" key="GridCell.Tab.0.right/0.0.1280.984@0.0.1280.984" timestamp="1592106778789" />
+    <state width="1237" height="325" key="GridCell.Tab.1.bottom" timestamp="1592097233816">
       <screen x="0" y="0" width="1280" height="984" />
     </state>
-    <state width="1237" height="325" key="GridCell.Tab.1.center/0.0.1280.984@0.0.1280.984" timestamp="1591944996508" />
-    <state width="1237" height="325" key="GridCell.Tab.1.left" timestamp="1591944996508">
+    <state width="1237" height="325" key="GridCell.Tab.1.bottom/0.0.1280.984@0.0.1280.984" timestamp="1592097233816" />
+    <state width="1237" height="325" key="GridCell.Tab.1.center" timestamp="1592097233815">
       <screen x="0" y="0" width="1280" height="984" />
     </state>
-    <state width="1237" height="325" key="GridCell.Tab.1.left/0.0.1280.984@0.0.1280.984" timestamp="1591944996508" />
-    <state width="1237" height="325" key="GridCell.Tab.1.right" timestamp="1591944996508">
+    <state width="1237" height="325" key="GridCell.Tab.1.center/0.0.1280.984@0.0.1280.984" timestamp="1592097233815" />
+    <state width="1237" height="325" key="GridCell.Tab.1.left" timestamp="1592097233815">
       <screen x="0" y="0" width="1280" height="984" />
     </state>
-    <state width="1237" height="325" key="GridCell.Tab.1.right/0.0.1280.984@0.0.1280.984" timestamp="1591944996508" />
+    <state width="1237" height="325" key="GridCell.Tab.1.left/0.0.1280.984@0.0.1280.984" timestamp="1592097233815" />
+    <state width="1237" height="325" key="GridCell.Tab.1.right" timestamp="1592097233816">
+      <screen x="0" y="0" width="1280" height="984" />
+    </state>
+    <state width="1237" height="325" key="GridCell.Tab.1.right/0.0.1280.984@0.0.1280.984" timestamp="1592097233816" />
+    <state x="120" y="66" key="SettingsEditor" timestamp="1591949769363">
+      <screen x="0" y="0" width="1280" height="984" />
+    </state>
+    <state x="120" y="66" key="SettingsEditor/0.0.1280.984@0.0.1280.984" timestamp="1591949769363" />
+    <state x="336" y="316" width="607" height="350" key="com.intellij.ide.util.TipDialog" timestamp="1592095984174">
+      <screen x="0" y="0" width="1280" height="984" />
+    </state>
+    <state x="336" y="316" width="607" height="350" key="com.intellij.ide.util.TipDialog/0.0.1280.984@0.0.1280.984" timestamp="1592095984174" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/GraphRedactor/Shape/EllipseDraw.java</url>
+          <line>29</line>
+          <option name="timeStamp" value="10" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/GraphRedactor/Main/Turn.java</url>
+          <line>18</line>
+          <option name="timeStamp" value="16" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/GraphRedactor/Main/Turn.java</url>
+          <line>31</line>
+          <option name="timeStamp" value="17" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

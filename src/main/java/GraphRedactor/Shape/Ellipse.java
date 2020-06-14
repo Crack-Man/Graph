@@ -6,53 +6,35 @@ import java.awt.geom.PathIterator;
 import java.awt.geom.Point2D;
 import java.awt.geom.Rectangle2D;
 import java.io.Serializable;
-import java.util.ArrayList;
-import java.util.List;
 
-public class Rect implements Shape, Serializable {
+public class Ellipse implements Shape, Serializable {
     private int x0, y0, x1, y1;
 
-    public Rect() {
+    public Ellipse() {
     }
 
     public int getX0() {
-        if(this.x0 - this.x1 < 0) {
-            return this.x0;
-        } else {
-            return this.x1;
-        }
+        return this.x0;
     }
 
     public int getX1() {
-        if(this.x0 - this.x1 >= 0) {
-            return this.x0;
-        } else {
-            return this.x1;
-        }
+        return this.x1;
     }
 
     public int getY0() {
-        if(this.y0 - this.y1 < 0) {
-            return this.y0;
-        } else {
-            return this.y1;
-        }
+        return this.y0;
     }
 
     public int getY1() {
-        if(this.y0 - this.y1 >= 0) {
-            return this.y0;
-        } else {
-            return this.y1;
-        }
+        return this.y1;
     }
 
-    public void addCoordinates(Point2D point) {
+    public void addCoordinate(Point2D point) {
         this.x0 = (int) point.getX();
         this.y0 = (int) point.getY();
     }
 
-    public void addSecCoordinates(Point2D point) {
+    public void addSecCoordinate(Point2D point) {
         this.x1 = (int) point.getX();
         this.y1 = (int) point.getY();
     }

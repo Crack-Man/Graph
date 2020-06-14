@@ -1,20 +1,23 @@
 package GraphRedactor.Shape;
 
 import java.awt.*;
+import java.awt.geom.Ellipse2D;
 import java.awt.geom.Point2D;
 
-public class RectDraw extends MainShape {
+public class EllipseDraw extends MainShape {
     private Color color;
-    private Rect shape;
+    private Ellipse shape;
 
-    public RectDraw() {
-        this.shape = new Rect();
+    public EllipseDraw() {
+        this.shape = new Ellipse();
     }
 
     @Override
     public void draw(Graphics g) {
         g.setColor(color);
-        g.drawRect(shape.getX0(), shape.getY0(), shape.getX1() - shape.getX0(), shape.getY1() - shape.getY0());
+        Ellipse2D ellipse = new Ellipse2D.Double();
+        ellipse.setFrameFromDiagonal(shape.getX0(), shape.getY0(), shape.getX1(), shape.getY1());
+        g.drawOval((int) ellipse.getX(), (int) ellipse.getY(), (int) ellipse.getWidth(), (int) ellipse.getHeight());
     }
 
     @Override
@@ -34,12 +37,12 @@ public class RectDraw extends MainShape {
 
     @Override
     public void addCoordinates(Point2D point) {
-        this.shape.addCoordinates(point);
+        this.shape.addCoordinate(point);
     }
 
     @Override
     public void addSecCoordinates(Point2D point) {
-        this.shape.addSecCoordinates(point);
+        this.shape.addSecCoordinate(point);
     }
 
     @Override

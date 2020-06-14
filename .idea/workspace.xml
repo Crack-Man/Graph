@@ -22,6 +22,27 @@
       <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/GraphRedactor/Buttons/ButtonLine$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/GraphRedactor/Buttons/ButtonLine.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/GraphRedactor/Buttons/ButtonPolygon$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/GraphRedactor/Buttons/ButtonPolygon.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/GraphRedactor/Buttons/ButtonRect$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/GraphRedactor/Buttons/ButtonRect.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/GraphRedactor/Buttons/MainButton.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/GraphRedactor/Main/Canvas$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/GraphRedactor/Main/Canvas$2.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/GraphRedactor/Main/Canvas.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/GraphRedactor/Main/Main.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/GraphRedactor/Main/Parameters.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/GraphRedactor/Main/Shape.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/GraphRedactor/Main/ShapeFrame.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/GraphRedactor/Main/Turn.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/GraphRedactor/Shape/PolyLine.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/GraphRedactor/Shape/PolyLineDraw.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/GraphRedactor/Shape/Polygon.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/GraphRedactor/Shape/PolygonDraw.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/GraphRedactor/Shape/Rect.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/GraphRedactor/Shape/RectDraw.class" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/gradlew" afterDir="false" />
@@ -86,6 +107,9 @@
     <key name="ExtractSuperBase.RECENT_KEYS">
       <recent name="GraphRedactor.Shape" />
     </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="" />
+    </key>
   </component>
   <component name="RunManager">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
@@ -93,7 +117,7 @@
       <module name="Graph.main" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="GraphRedactor.save.*" />
+          <option name="PATTERN" value="save.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -125,26 +149,34 @@
       <screen x="0" y="0" width="1280" height="984" />
     </state>
     <state x="445" y="201" key="#com.intellij.ide.util.MemberChooser/0.0.1280.984@0.0.1280.984" timestamp="1592124624714" />
+    <state x="353" y="421" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1592138495991">
+      <screen x="0" y="0" width="1280" height="984" />
+    </state>
+    <state x="353" y="421" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog/0.0.1280.984@0.0.1280.984" timestamp="1592138495991" />
+    <state x="436" y="372" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.packages" timestamp="1592138512249">
+      <screen x="0" y="0" width="1280" height="984" />
+    </state>
+    <state x="436" y="372" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.packages/0.0.1280.984@0.0.1280.984" timestamp="1592138512249" />
     <state x="294" y="86" key="CommitChangelistDialog2" timestamp="1591948132393">
       <screen x="0" y="0" width="1280" height="984" />
     </state>
     <state x="294" y="86" key="CommitChangelistDialog2/0.0.1280.984@0.0.1280.984" timestamp="1591948132393" />
-    <state width="1237" height="263" key="GridCell.Tab.0.bottom" timestamp="1592138272108">
+    <state width="1237" height="263" key="GridCell.Tab.0.bottom" timestamp="1592139315852">
       <screen x="0" y="0" width="1280" height="984" />
     </state>
-    <state width="1237" height="263" key="GridCell.Tab.0.bottom/0.0.1280.984@0.0.1280.984" timestamp="1592138272108" />
-    <state width="1237" height="263" key="GridCell.Tab.0.center" timestamp="1592138272108">
+    <state width="1237" height="263" key="GridCell.Tab.0.bottom/0.0.1280.984@0.0.1280.984" timestamp="1592139315852" />
+    <state width="1237" height="263" key="GridCell.Tab.0.center" timestamp="1592139315852">
       <screen x="0" y="0" width="1280" height="984" />
     </state>
-    <state width="1237" height="263" key="GridCell.Tab.0.center/0.0.1280.984@0.0.1280.984" timestamp="1592138272108" />
-    <state width="1237" height="263" key="GridCell.Tab.0.left" timestamp="1592138272108">
+    <state width="1237" height="263" key="GridCell.Tab.0.center/0.0.1280.984@0.0.1280.984" timestamp="1592139315852" />
+    <state width="1237" height="263" key="GridCell.Tab.0.left" timestamp="1592139315852">
       <screen x="0" y="0" width="1280" height="984" />
     </state>
-    <state width="1237" height="263" key="GridCell.Tab.0.left/0.0.1280.984@0.0.1280.984" timestamp="1592138272108" />
-    <state width="1237" height="263" key="GridCell.Tab.0.right" timestamp="1592138272108">
+    <state width="1237" height="263" key="GridCell.Tab.0.left/0.0.1280.984@0.0.1280.984" timestamp="1592139315852" />
+    <state width="1237" height="263" key="GridCell.Tab.0.right" timestamp="1592139315852">
       <screen x="0" y="0" width="1280" height="984" />
     </state>
-    <state width="1237" height="263" key="GridCell.Tab.0.right/0.0.1280.984@0.0.1280.984" timestamp="1592138272108" />
+    <state width="1237" height="263" key="GridCell.Tab.0.right/0.0.1280.984@0.0.1280.984" timestamp="1592139315852" />
     <state width="1237" height="325" key="GridCell.Tab.1.bottom" timestamp="1592136418658">
       <screen x="0" y="0" width="1280" height="984" />
     </state>
@@ -179,7 +211,7 @@
           <option name="timeStamp" value="24" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/GraphRedactor/save/SaveShape.java</url>
+          <url>file://$PROJECT_DIR$/src/main/java/save/SaveShape.java</url>
           <line>25</line>
           <option name="timeStamp" value="25" />
         </line-breakpoint>

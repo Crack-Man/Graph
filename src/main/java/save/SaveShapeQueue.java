@@ -1,23 +1,21 @@
-package GraphRedactor.save;
-
-import GraphRedactor.save.SaveShape;
+package save;
 
 import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
 
 public class SaveShapeQueue implements Serializable {
-    private List<SaveShape> turn;
-
-    public SaveShapeQueue() {
-        this.turn = new ArrayList<SaveShape>();
+    private static final long serialVersionUID = 1L;
+    private List<SaveShape> shapes;
+    public SaveShapeQueue(){
+        shapes=new ArrayList<SaveShape>();
     }
 
     public void addShape(SaveShape shape) {
-        this.turn.add(shape);
+        shapes.add(shape);
     }
 
     public List<SaveShape> getShapes() {
-        return this.turn;
+        return shapes;
     }
 }

@@ -4,7 +4,7 @@ import java.awt.*;
 import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
-import GraphRedactor.save.BaseShape;
+import save.BaseShape;
 
 public class Turn implements Serializable {
     private List<BaseShape> list;

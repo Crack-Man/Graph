@@ -2,7 +2,7 @@ package GraphRedactor.Main;
 
 
 import GraphRedactor.Observer.*;
-import GraphRedactor.save.*;
+import save.*;
 import GraphRedactor.Shape.*;
 
 import javax.imageio.ImageIO;
@@ -107,7 +107,6 @@ public class Shape implements Observed {
             shapes = (SaveShapeQueue) objectInputStream.readObject();
             refresh();
             for (SaveShape saveShape: shapes.getShapes()) {
-                System.out.println(saveShape.getColor());
                 setColor(saveShape.getColor());
                 if(saveShape.getType().equals("Ellipse")) {
                     add(new EllipseDraw());

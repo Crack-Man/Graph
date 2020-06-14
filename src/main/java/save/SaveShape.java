@@ -1,4 +1,4 @@
-package GraphRedactor.save;
+package save;
 
 import java.awt.*;
 import java.awt.geom.Point2D;
@@ -6,6 +6,7 @@ import java.io.Serializable;
 import java.util.List;
 
 public class SaveShape implements Serializable {
+    private static final long serialVersionUID = 1L;
     private String type;
     private List<Point2D> points;
     private Color color;

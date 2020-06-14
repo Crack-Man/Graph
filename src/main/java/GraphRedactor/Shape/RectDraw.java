@@ -1,6 +1,6 @@
 package GraphRedactor.Shape;
 
-import GraphRedactor.save.BaseShape;
+import save.BaseShape;
 
 import java.awt.*;
 import java.awt.geom.Rectangle2D;

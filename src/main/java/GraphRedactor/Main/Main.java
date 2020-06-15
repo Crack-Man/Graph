@@ -9,10 +9,11 @@ import java.awt.*;
 class Main {
     public static void main(String args[]) {
         Parameters par = Parameters.get();
-        par.setParameters(800, 800, 40);
+        Dimension screenSize = Toolkit.getDefaultToolkit().getScreenSize();
+        par.setParameters(screenSize.width, screenSize.height, 40);
         Shape sp = Shape.get();
         EventQueue.invokeLater(() -> {
-                JFrame frame = new ShapeFrame(sp, par);
+                JFrame frame = new ShapeFrame(sp);
                 frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
                 Shape.get().addObserver((Observer) frame);
                 frame.setVisible(true);

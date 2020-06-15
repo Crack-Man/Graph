@@ -38,10 +38,7 @@ public class RectDraw extends BaseShape {
         return shape.getPoints();
     }
 
-    @Override
-    public void set(Shape shape) {
-        this.shape = (Rect) shape;
-    }
+
 
     @Override
     public void setColor(Color color) {

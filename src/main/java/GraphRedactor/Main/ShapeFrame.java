@@ -7,13 +7,14 @@ import GraphRedactor.Observer.Observer;
 import javax.swing.*;
 
 class ShapeFrame extends JFrame implements Observer {
-    public ShapeFrame(Shape sp, Parameters par) {
+    public ShapeFrame(Shape sp) {
         setTitle("Graph Redactor");
+        Parameters par = Parameters.get();
         this.setSize(par.getWidth(), par.getHeight());
         setLocationByPlatform(true);
-        this.add(new ButtonShapes(sp, par));
-        this.add(new ButtonColors(sp, par));
-        this.add(new Canvas(sp, par));
+        this.add(new ButtonShapes(sp));
+        this.add(new ButtonColors());
+        this.add(new Canvas(sp));
         this.setVisible(true);
     }
 

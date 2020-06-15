@@ -7,8 +7,9 @@ import GraphRedactor.Main.Shape;
 import java.awt.*;
 
 public class ButtonShapes extends JPanel {
-    public ButtonShapes(Shape sp, Parameters par) {
+    public ButtonShapes(Shape sp) {
         super();
+        Parameters par = Parameters.get();
         this.setBounds(0,0, par.getWidth(), par.getButHeight());
         this.setBackground(Color.GRAY);
         this.add(new ButtonRect(sp));

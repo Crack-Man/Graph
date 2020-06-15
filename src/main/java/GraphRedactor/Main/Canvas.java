@@ -11,10 +11,10 @@ public class Canvas extends JPanel {
     private Parameters par;
     private Canvas me;
 
-    public Canvas(Shape shape, Parameters par) {
+    public Canvas(Shape shape) {
         me = this;
         this.shape = shape;
-        this.par = par;
+        this.par = Parameters.get();
         this.setBounds(0, 2 * par.getButHeight(), par.getWidth(), par.getHeight());
         this.addMouseListener(new MouseListener() {
                 //MouseListener

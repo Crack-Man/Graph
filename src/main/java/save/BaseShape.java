@@ -13,7 +13,6 @@ public abstract class BaseShape implements Serializable {
     abstract public String getType();
     abstract public List<Point2D> getPoints();
 
-    abstract public void set(Shape shape);
     abstract public void setColor(Color color);
     abstract public void setCoordinates(List<Point2D> point);
 

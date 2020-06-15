@@ -38,10 +38,7 @@ public class EllipseDraw extends BaseShape {
         return shape.getPoints();
     }
 
-    @Override
-    public void set(Shape shape) {
-        this.shape = (Ellipse) shape;
-    }
+
 
     @Override
     public void setColor(Color color) {

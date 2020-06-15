@@ -35,10 +35,7 @@ public class PolyLineDraw extends BaseShape {
         return shape.getPoints();
     }
 
-    @Override
-    public void set(Shape shape) {
-        this.shape = (PolyLine) shape;
-    }
+
 
     @Override
     public void setColor(Color color) {

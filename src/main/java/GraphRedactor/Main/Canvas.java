@@ -29,9 +29,9 @@ public class Canvas extends JPanel {
 
                 @Override
                 public void mousePressed(MouseEvent event) {
-                    if(shape.getLast()!=null) {
+                    if(shape.getLast() != null) {
                         shape.addCoordinates(event.getPoint());
-                        repaint();
+                        shape.addMotionCoordinates(event.getPoint());
                     }
                 }
 
@@ -39,16 +39,14 @@ public class Canvas extends JPanel {
                 public void mouseReleased(MouseEvent event) {
                     if(shape.getLast() != null) {
                         shape.addSecCoordinates(event.getPoint());
-                        repaint();
                     }
                 }
         });
         this.addMouseMotionListener(new MouseMotionListener() {
             @Override
             public void mouseDragged(MouseEvent event) {
-                if(shape.getLast()!=null) {
+                if(shape.getLast() != null) {
                     shape.addMotionCoordinates(event.getPoint());
-                    repaint();
                 }
             }
 

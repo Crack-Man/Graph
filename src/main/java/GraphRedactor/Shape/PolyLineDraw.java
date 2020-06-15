@@ -47,7 +47,7 @@ public class PolyLineDraw extends BaseShape {
 
     @Override
     public void setCoordinates(List<Point2D> point) {
-        for(int i = 0; i < point.size() - 1; i++) {
+        for(int i = 0; i < point.size(); i++) {
             addCoordinates(point.get(i));
         }
     }

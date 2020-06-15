@@ -42,6 +42,7 @@ public class Polygon implements Shape, Serializable {
     }
 
     public void addMotionCoordinates(Point2D point) {
+        this.coordinates.set(this.coordinates.size() - 1, point);
         this.x.set(this.x.size() - 1, (int) point.getX());
         this.y.set(this.y.size() - 1, (int) point.getY());
     }

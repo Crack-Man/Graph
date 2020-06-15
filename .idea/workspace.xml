@@ -34,7 +34,6 @@
       <change afterPath="$PROJECT_DIR$/build/classes/java/main/GraphRedactor/Main/Canvas.class" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/build/classes/java/main/GraphRedactor/Main/Main.class" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/build/classes/java/main/GraphRedactor/Main/Parameters.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/classes/java/main/GraphRedactor/Main/Shape.class" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/build/classes/java/main/GraphRedactor/Main/ShapeFrame.class" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/build/classes/java/main/GraphRedactor/Main/Turn.class" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/build/classes/java/main/GraphRedactor/Shape/PolyLine.class" afterDir="false" />
@@ -56,7 +55,6 @@
       <change afterPath="$PROJECT_DIR$/src/main/java/GraphRedactor/Main/Canvas.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/java/GraphRedactor/Main/Main.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/java/GraphRedactor/Main/Parameters.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/GraphRedactor/Main/Shape.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/java/GraphRedactor/Main/ShapeFrame.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/java/GraphRedactor/Main/Turn.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/java/GraphRedactor/Shape/Ellipse.java" afterDir="false" />
@@ -161,22 +159,22 @@
       <screen x="0" y="0" width="1280" height="984" />
     </state>
     <state x="294" y="86" key="CommitChangelistDialog2/0.0.1280.984@0.0.1280.984" timestamp="1591948132393" />
-    <state width="1237" height="263" key="GridCell.Tab.0.bottom" timestamp="1592200605689">
+    <state width="1237" height="263" key="GridCell.Tab.0.bottom" timestamp="1592201549814">
       <screen x="0" y="0" width="1280" height="984" />
     </state>
-    <state width="1237" height="263" key="GridCell.Tab.0.bottom/0.0.1280.984@0.0.1280.984" timestamp="1592200605689" />
-    <state width="1237" height="263" key="GridCell.Tab.0.center" timestamp="1592200605689">
+    <state width="1237" height="263" key="GridCell.Tab.0.bottom/0.0.1280.984@0.0.1280.984" timestamp="1592201549814" />
+    <state width="1237" height="263" key="GridCell.Tab.0.center" timestamp="1592201549814">
       <screen x="0" y="0" width="1280" height="984" />
     </state>
-    <state width="1237" height="263" key="GridCell.Tab.0.center/0.0.1280.984@0.0.1280.984" timestamp="1592200605689" />
-    <state width="1237" height="263" key="GridCell.Tab.0.left" timestamp="1592200605689">
+    <state width="1237" height="263" key="GridCell.Tab.0.center/0.0.1280.984@0.0.1280.984" timestamp="1592201549814" />
+    <state width="1237" height="263" key="GridCell.Tab.0.left" timestamp="1592201549814">
       <screen x="0" y="0" width="1280" height="984" />
     </state>
-    <state width="1237" height="263" key="GridCell.Tab.0.left/0.0.1280.984@0.0.1280.984" timestamp="1592200605689" />
-    <state width="1237" height="263" key="GridCell.Tab.0.right" timestamp="1592200605689">
+    <state width="1237" height="263" key="GridCell.Tab.0.left/0.0.1280.984@0.0.1280.984" timestamp="1592201549814" />
+    <state width="1237" height="263" key="GridCell.Tab.0.right" timestamp="1592201549814">
       <screen x="0" y="0" width="1280" height="984" />
     </state>
-    <state width="1237" height="263" key="GridCell.Tab.0.right/0.0.1280.984@0.0.1280.984" timestamp="1592200605689" />
+    <state width="1237" height="263" key="GridCell.Tab.0.right/0.0.1280.984@0.0.1280.984" timestamp="1592201549814" />
     <state width="1237" height="325" key="GridCell.Tab.1.bottom" timestamp="1592186974082">
       <screen x="0" y="0" width="1280" height="984" />
     </state>

@@ -1,18 +1,18 @@
 package GraphRedactor.Buttons;
 
-import GraphRedactor.Main.Shape;
+import GraphRedactor.Main.Model;
 import GraphRedactor.Shape.RectDraw;
 
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 public class ButtonRect extends MainButton {
-    public ButtonRect(Shape sp) {
+    public ButtonRect() {
         super("Rectangle");
         this.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                sp.add(new RectDraw());
+                Model.get().add(new RectDraw());
             }
         });
     }

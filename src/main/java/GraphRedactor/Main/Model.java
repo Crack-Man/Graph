@@ -12,16 +12,16 @@ import java.awt.image.BufferedImage;
 import java.io.*;
 import java.util.ArrayList;
 
-public class Shape implements Observed {
+public class Model implements Observed {
     private java.util.List<Observer> listOfObservers;
     private int width, height;
     private BufferedImage buf = null;
     private Graphics buffer = null;
     private Turn turn;
     private Parameters par;
-    private static Shape me;
+    private static Model me;
 
-    private Shape() {
+    private Model() {
         turn = new Turn();
         listOfObservers = new ArrayList<Observer>();
         this.par = Parameters.get();
@@ -33,9 +33,9 @@ public class Shape implements Observed {
         buffer.fillRect(0, 2 * par.getButHeight(), this.width, this.height);
     }
 
-    public static Shape get() {
+    public static Model get() {
         if(me == null) {
-            me = new Shape();
+            me = new Model();
         }
         return me;
     }

@@ -7,13 +7,13 @@ import java.awt.event.MouseListener;
 import java.awt.event.MouseMotionListener;
 
 public class Canvas extends JPanel {
-    private Shape shape;
+    private Model model;
     private Parameters par;
     private Canvas me;
 
-    public Canvas(Shape shape) {
+    public Canvas() {
         me = this;
-        this.shape = shape;
+        this.model = Model.get();
         this.par = Parameters.get();
         this.setBounds(0, 2 * par.getButHeight(), par.getWidth(), par.getHeight());
         this.addMouseListener(new MouseListener() {
@@ -29,24 +29,24 @@ public class Canvas extends JPanel {
 
                 @Override
                 public void mousePressed(MouseEvent event) {
-                    if(shape.getLast() != null) {
-                        shape.addCoordinates(event.getPoint());
-                        shape.addMotionCoordinates(event.getPoint());
+                    if(model.getLast() != null) {
+                        model.addCoordinates(event.getPoint());
+                        model.addMotionCoordinates(event.getPoint());
                     }
                 }
 
                 @Override
                 public void mouseReleased(MouseEvent event) {
-                    if(shape.getLast() != null) {
-                        shape.addSecCoordinates(event.getPoint());
+                    if(model.getLast() != null) {
+                        model.addSecCoordinates(event.getPoint());
                     }
                 }
         });
         this.addMouseMotionListener(new MouseMotionListener() {
             @Override
             public void mouseDragged(MouseEvent event) {
-                if(shape.getLast() != null) {
-                    shape.addMotionCoordinates(event.getPoint());
+                if(model.getLast() != null) {
+                    model.addMotionCoordinates(event.getPoint());
                 }
             }
 
@@ -57,7 +57,7 @@ public class Canvas extends JPanel {
     }
 
     public void paint(Graphics g) {
-        g.drawImage(shape.getBuf(), 0, 0, me);
+        g.drawImage(model.getBuf(), 0, 0, me);
     }
 
 }
